@@ -5,7 +5,7 @@
       required String role}) async {
     try {
       HttpsCallable addAdminRole =
-          FirebaseFunctions.instance.httpsCallable('createAdmin');
+          FirebaseFunctions.instance.httpsCallable('createRole');
       var user = {
         'name': name,
         'password': password,
