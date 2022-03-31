@@ -13,11 +13,11 @@
         'role': role,
       };
       addAdminRole(user).then((res) {
-        print('result', res.data.toString());
+        print(res.data.toString());
       }).catchError((err) {
-        print('Error', err.message);
+        print(err.message);
       });
     } catch (error) {
-      print('error', error.toString());
+      print(error.toString());
     }
   }
