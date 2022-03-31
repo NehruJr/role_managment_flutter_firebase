@@ -32,7 +32,7 @@ class InvalidRoleError extends Error {
 }
 
 function roleIsValid(role) {
-  const validRoles = ["admin", "call center", "pharmacy chain"];
+  const validRoles = ["admin", "role1", "role2"];
   return validRoles.includes(role);
 }
 
