@@ -4,9 +4,7 @@ var admin = require("firebase-admin");
 
 const { auth } = require("firebase-admin");
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-});
+admin.initializeApp();
 const db = admin.firestore();
 
 class UnauthenticatedError extends Error {
